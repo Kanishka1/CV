@@ -160,18 +160,6 @@ h2
 	padding-bottom: 20px;
 }
 
-
-/*#btm
-{
-	width: 10%;
-	border-style: none;
-	border-top-style: dotted;
-	border-color: #679b9b;
-	border-width:8px;
-	margin-left: 610px;
-}*/
-
-
 .contact-me
 {
 	line-height: 2;
@@ -197,11 +185,7 @@ h2
 	height: 250px;
 	width: 100%;
 }
-.carousel-control-prev
-{
-	height: 180px;
-}
-.carousel-control-next
+.carousel-control-prev,.carousel-control-next
 {
 	height: 180px;
 }
@@ -216,7 +200,6 @@ h2
 }
 .testimonial-text
 {
-	
 	color: white;
 }
 .carousel-inner
@@ -238,6 +221,10 @@ h2
 {
 	width: 100%;
 	background-color: black;
+}
+.pro:hover
+{
+	background-color: #cd8d7b;
 }
 
 @media(max-width: 1028px)
