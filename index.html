@@ -9,9 +9,12 @@
   <!--BootStrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/f58c5089e2.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/f58c5089e2.js" crossorigin="anonymous"></script> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--StyleSheet-->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/glass-ui.css">
+
    <style>
       .pro:hover
 {
@@ -19,8 +22,9 @@
 }
    </style>
   <!--Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   
    <!--Bootstrap JS-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -29,181 +33,163 @@
 </head>
 
 <body>
-  <section id="title">
-    <div class="container-fluid">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="">Hello World!</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-       
-        <li class="nav-item">
-            <a class="nav-link" href="#intro">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#sec3">Skills</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-        </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-        </li>
-    </ul>
- </div>
-</nav>
+<!-- NAVBAR -->
+<section id="title">
+  <div class="container-fluid">
 
-<div class="top-container">
-    <div class="row">
-    <div class="col-lg-6">
+    <nav class="navbar navbar-expand-lg navbar-dark glass">
+      <a class="navbar-brand" href="">Hello World !</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#intro">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sec3">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="top-container">
+        <div class="glass">
+          <h1>Hi, I'm Kanishka Lahori</h1>
+      <p>Software Engineer | React | Angular | Java Spring Boot</p>
+      <p>Building scalable systems that turn data into actionable insights.</p>
+        </div>
       
-      <h1>I'm Kanishka Lahori</h1>
-      <!-- <p id="intro">I'm Kanishka</p> -->
-     
     </div>
+
   </div>
-</div>
 </section>
-  
+
+<!-- ABOUT -->
 <section id="intro">
-<div class="middle-container">
-  <div class="profile">
-    <img class="img" src="images/0.jpg" alt="">
-    <h2>Hi.</h2>
-    <p id= "about">A senior year undergraduate student in Computer Science Engineering.<br>Passionate about building software solutions for solving real world problems.<br>And, I also 💖content writing.</p>
+  <div class="middle-container glass text-center">
+    <!-- <img class="img" src="images/0.jpg" alt=""> -->
+    <h2>About Me</h2>
+    <p>
+      A Engineer with a passion for building scalable, high-performance applications.<br>
+      I design intuitive frontends and robust backend systems that power real-world products.
+    </p>
   </div>
-
 </section>
+
 <hr>
-<!--Skills Section-->
-<section id="sec3">
-  <div class="skills">
-    <h2>SKILLS AND ABILITIES</h2>
-    <div class="skill-row">
-      <img class="img" id="py" src="images/skill1.jpg" alt="">
-      <h3>Python</h3>
-      <p>A pure python lover 💖.<br>Intrested in exploring the internals of Python as a language.<br>Worked upon projects using the Python Flask Web Framework<br></p>
-    </div>
-    <div class="skill-row">
-      <iframe id="web" src="https://giphy.com/embed/eE0s0lpPeAU8g"></iframe>
-      <h3>Web Development</h3>
-      <p>I have a passion for web design and love to create for web devices. Designed beautiful websites using major web frameworks. You can have a glimpse at <a href="https://github.com/Kanishka1">GitHub</a></p>
-    </div>
-    <div class="skill-row">
-      <img class="img" id="py" src="images/database.png" alt="">
-      <h3>Database Management</h3>
-      <p>Data is everything.📅<br>Without data, anything would just be a hollow structure.<br>With that believe, I strive to work on data using MySQL in my best way possible. </p>
-    </div>
+
+<!-- SKILLS -->
+<section id="sec3" class="container text-center">
+  <h2>SKILLS</h2>
+
+  <div class="skill-row glass">
+    <h3><i class="fa-brands fa-react"></i>  Frontend Engineering</h3>
+    <p><span style="font-style: italic;">React is not just a library, it’s a way of thinking.</span><br><br>
+        Developed scalable, real-world applications using React.<br>
+Experienced in building reusable components and handling complex state efficiently.
+Focused on performance, maintainability, and delivering impactful user experiences</p>
   </div>
-   <hr>
+
+  <div class="skill-row glass">
+    <h3><i class="fa-solid fa-diagram-project"></i> System Design</h3>
+    <p> Designed and developed real-time, data-driven systems with high reliability and scalability.
+        Experience working with event-driven architectures, live data streams, and map-based applications.<br>
+        Focused on building systems that deliver actionable insights and fast response times.
+      </p>
+  </div>
+
+  <div class="skill-row glass">
+    <h3><i class="fa-solid fa-database"></i> Backend & Data Handling</h3>
+     <p>Data is everything.📅<br><br>
+      Worked with Java Spring Boot, MongoDB, Elasticsearch to build efficient data pipelines.
+      Skilled in designing APIs, handling large datasets and optimizing query performance.
+      Strong focus on data-driven decision making and system efficiency. </p>
+  </div>
+
+  <div class="skill-row glass">
+    <h3>Tools & Testing</h3>
+    <p>
+      Experienced with Git, Docker, Maven, Bitbucket, Kubernetes, JUnit, Jamine, Pupeteer.
+    </p>
+  </div>
+
 </section>
 
-<h2 >CERTIFICATIONS</h2>
-   
-   <!--Achievements-->
-<div id="testimonials">
-    
-    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-     <h2 class="testimonial-text">Web Development Bootcamp 2020</h2>
-     <p class="from">From, Udemy</p>
-    </div>
-    <div class="carousel-item">
-     <h2 class="testimonial-text">Python Core And Advanced</h2>
-     <p class="from">From, Udemy</p>
-    </div>
-    <div class="carousel-item">
-     <h2 class="testimonial-text">Programming Essentials In C++</h2>
-     <p class="from">From, Cisco Networking Academy</p>
-    </div>
-  </div>
-  <a class=" carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  </div>
-  <hr>
-  
+<hr>
 
-<!--Project Section -->
-<section id="projects">
-  <div class="skills">
+<!-- WORK -->
+<section id="work">
+  <h2>WORK EXPERIENCE</h2>
+
+  <div class="skill-row glass">
+    <h3>Senior Software Engineer</h3>
+    <p><strong>Kloudspot Inc</strong> | Bangalore, India | 2022 – Present</p>
+  </div>
+  <div class="skill-row glass">
+    <h3>Software Engineer</h3>
+    <p><strong>Kloudspot Inc</strong> | Bangalore, India | 2020 – 2022</p>
+  </div>
+  <div class="skill-row glass">
+    <h3>Software Engineer Intern</h3>
+    <p><strong>VNurt Technologies</strong> | Bangalore, India | March 2020 – June 2020</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- PROJECTS -->
+<!-- <section id="projects">
   <h2>PROJECTS</h2>
+
   <div class="row">
+
     <div class="col-lg-4 col-md-6">
-  <div class="card" >
-  <img class="card-img-top" src="images/va.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Virtual Assistant</h5>
-    <p class="card-text">A voice based virtual assistant that'll help students with their academic subjects</p>
-    <a href="https://github.com/Kanishka1/Python-Virtual-Assistant" class="pro btn btn-primary">View Project</a>
+      <div class="skill-row glass">
+        <div class="card-body">
+          <h5>Location Intelligence & Situational Awareness (LISA) Platform</h5>
+          <p>Buit real-time dashboards for airports, metro stations, offices maanging crowd analyitcs, wait times and security alerts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card glass">
+        <div class="card-body">
+          <h5>Visitor Management System</h5>
+          <p>Face recognition, real-time alerts, and analytics.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6">
-<div class="card">
-  <img class="card-img-top" src="images/findmycar.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Find My Car</h5>
-    <p class="card-text">An andriod app that intends to find exact parking slot in perhaps a huge parking space.</p>
-    <a href="https://github.com/Kanishka1/" class="pro btn btn-primary">View Project</a>
-  </div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="card">
-  <img class="card-img-top" src="images/trash.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Trash Collector</h5>
-    <p class="card-text">A web application that helps people sell their household junk like old newspaper, palstics etc.</p>
-    <a href="https://github.com/Kanishka1/Waste-Management" class="pro btn btn-primary">View Project</a>
-  </div>
-</div>
-</div>
-</div>
 </section>
 
-   <hr id="btm">
-<!-- 
-  Contact Section
- -->
- <section id="contact">
- <div class="contact-me">
+<hr> -->
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-me glass text-center">
     <h2>Get In Touch</h2>
-   
-<p id="p">I’m currently available for freelance work and fulltime opportunities.👩‍🎓
-  <br>If you consider me a suitable candidate or,<br> think you need my help with something or just fancy saying hey, then get in touch.</p>
-    <a class="btn btn-outline-light btn-lg" href="mailto:klahori98@gmail.com"><i class="far fa-envelope">&nbsp;&nbsp;</i>CONTACT ME</a>
+
+    <p>
+      Open to opportunities and collaborations.<br>
+      Let’s build something impactful.
+    </p>
+
+    <a class="btn btn-outline-light" href="mailto:klahori98@gmail.com">
+      <i class="fa-solid fa-envelope"></i> Contact Me
+    </a>
   </div>
-</div>
 
+  <!-- FOOTER -->
+  <div class="bottom-container text-center">
+    <a href="https://www.linkedin.com/in/klahori98" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.github.com/Kanishka1" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:klahori98@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 
-<div class="bottom-container">
-   
-   <a href="https://drive.google.com/open?id=1vw2DVIpjgSZ0Qwz3s-qwEA9h901uBywd"><i class="fas fa-file-pdf"></i></a>
-  &nbsp;
-   
-  <a href="https://www.linkedin.com/in/klahori98" target="_blank"><i class=" fab fa-linkedin"></i></a>
-  &nbsp;
-
-  <a href="https://www.github.com/Kanishka1" target="_blank"><i class=" fab fa-github"></i></a>
-  &nbsp;
-
-  <a href="mailto:klahori98@gmail.com"><i class=" fas fa-envelope"></i></a>
-  &nbsp;
-
-  <a href="https://www.facebook.com/kanishka.lahori"><i class="fab fa-facebook-f"></i></a>
-  <p id="copy">© 2020 Kanishka Lahori.</p>
-</div>
-</section>  
+    <p>© 2026 Kanishka Lahori</p>
+  </div>
+</section>
 </body>
 </html>

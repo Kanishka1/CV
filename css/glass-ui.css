@@ -1,0 +1,118 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1e293b, #020617);
+  color: #e2e8f0;
+}
+
+/* Glow blobs */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::before {
+  background: #7c3aed;
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  background: #0ea5e9;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* ===== GLASS CARD ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 25px auto;
+  max-width: 900px;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(124, 58, 237, 0.4);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== HERO ===== */
+.top-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.top-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.top-container p {
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* ===== SECTION HEADINGS ===== */
+h2 {
+  text-align: center;
+  /* margin: 60px 0 20px; */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===== PROJECT CARDS ===== */
+.card.glass {
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+  border: none;
+}
+
+/* ===== ICONS ===== */
+.bottom-container i {
+  font-size: 22px;
+  margin: 12px;
+  transition: 0.3s;
+}
+
+.bottom-container i:hover {
+  color: #7c3aed;
+  transform: scale(1.3);
+}

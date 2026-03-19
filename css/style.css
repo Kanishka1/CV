@@ -6,7 +6,7 @@ body
 /*NavBar*/
 .navbar
 {
-	padding:0 0 4.5rem;
+	padding:0 0 3.5rem;
 }
 
 .navbar-brand
@@ -92,7 +92,7 @@ p
 #about
 {
 	text-align: center;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 hr
 {
@@ -126,7 +126,7 @@ h3
 	text-align: left;
 	color:#2c003e;
 }
-iframe
+/* iframe
 {
 	width: 200px;
     height: 100px;
@@ -138,7 +138,7 @@ iframe
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10%;
-}
+} */
 
 #py
 {
@@ -261,6 +261,7 @@ h2
 	margin-top: 50px;
 	text-align: center;
 	height: 125px;
+	
 }
 
 .link
@@ -281,5 +282,12 @@ h2
 #copy
 {
 	padding-top: 10px;
+}
+.bottom-container i{
+	  color: white;
+}
+.bottom-container i:hover {
+
+  transform: scale(1.8);
 }
 /**/
